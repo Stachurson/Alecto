@@ -22,15 +22,15 @@ $font-logo: 'Athiti', sans-serif;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-}
 
-.splash-inner {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 8vh;
-    padding-top: 5vh;
-    justify-content: space-around;
+    .splash-inner {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 8vh;
+        padding-top: 5vh;
+        justify-content: space-around;
+    }
 }
 
 /* Logo in header */
@@ -38,27 +38,29 @@ $font-logo: 'Athiti', sans-serif;
     font-size: 35px;
     font-family: $font-logo;
     color: #fff;
+    letter-spacing: 1.2px;
+
+    .logo-element {
+        color: $main-color;
+        font-size: 42px;
+    }
 }
 
-.logo-element {
-    color: $main-color;
-    font-size: 42px;
-}
 
 /* Menu in header */
 .menu ul {
     display: flex;
-}
 
-.menu li {
-    padding-right: 35px;
-    list-style-type: none;
-}
+    li {
+        padding-right: 35px;
+        list-style-type: none;
+    }
 
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $font-logo;
-    font-size: 18px;
+    a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $font-logo;
+        font-size: 18px;
+    }
 }
