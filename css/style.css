@@ -3,12 +3,18 @@
 /* Colors */
 /* Fonst */
 /* Letter  spacing */
+/* Background box */
 /* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #485460;
 }
 
 /* Header */
@@ -19,12 +25,13 @@
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
-  background-image: url("https://i.postimg.cc/yNBRry0N/pexels-visit-greenland-360912.jpg");
   height: 100vh;
   width: 100vw;
+  background-image: url("https://i.postimg.cc/yNBRry0N/pexels-visit-greenland-360912.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  color: #fff;
 }
 
 .splash .splash-inner {
@@ -48,7 +55,7 @@
 }
 
 .logo-text .logo-element {
-  color: #26de81;
+  color: #63dba3;
   font-size: 42px;
 }
 
@@ -72,12 +79,12 @@
   letter-spacing: 1.2px;
 }
 
-/* Text in header */
+/* Title in header */
 .header-text {
   text-align: center;
   font-size: 25px;
-  font-family: "Raleway", sans-serif;
   padding-bottom: 85px;
+  letter-spacing: 1.2px;
 }
 
 .header-text h1 {
@@ -86,11 +93,86 @@
 
 .header-text span {
   font-weight: 500;
-  letter-spacing: 1.2px;
 }
 
 .header-text p {
   font-size: 20px;
   padding-top: 15px;
+}
+
+/* About */
+.container {
+  max-width: 80vw;
+  margin: 12vh auto;
+}
+
+.container .section-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  letter-spacing: 1.2px;
+}
+
+.container .section-text h2 {
+  font-size: 55px;
+  font-weight: 200;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.container .section-text h2::after {
+  position: absolute;
+  content: '';
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 26%;
+  height: 1px;
+  background-color: #63dba3;
+}
+
+.container .section-text p {
+  margin-bottom: 120px;
+}
+
+.container .box-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.container .box-wrapper .box {
+  -ms-flex: 1;
+      flex: 1;
+  padding-right: 20px;
+}
+
+.container .box-wrapper .box:last-child {
+  padding-right: 0;
+}
+
+.container .box-wrapper .fas {
+  font-size: 38px;
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  background-color: rgba(210, 218, 226, 0.507);
+  transition: .4s;
+  margin-bottom: 7vh;
+}
+
+.container .box-wrapper .fas:hover {
+  background-color: #63dba3;
+  color: #fff;
+}
+
+.container .box-wrapper h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 4vh;
 }
 /*# sourceMappingURL=style.css.map */
