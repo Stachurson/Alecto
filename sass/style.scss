@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400;600&display=swap');
+
+/* Variables */
+$main-color: #26de81;
+$section-color: #4b4b4b;
+$text-color: #485460;
+
+$font-logo: 'Athiti', sans-serif;
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.splash {
+    background-image: url('https://i.postimg.cc/fLgJ362F/pexels-visit-greenland-360912.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    padding-top: 5vh;
+    justify-content: space-around;
+}
+
+/* Logo in header */
+.logo-text {
+    font-size: 35px;
+    font-family: $font-logo;
+    color: #fff;
+}
+
+.logo-element {
+    color: $main-color;
+    font-size: 42px;
+}
+
+/* Menu in header */
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    padding-right: 35px;
+    list-style-type: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-logo;
+    font-size: 18px;
+}
