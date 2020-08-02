@@ -4,7 +4,8 @@
 /* Fonst */
 /* Letter  spacing */
 /* Background box */
-/* Global */
+/* Transition */
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +16,30 @@
 body {
   font-family: "Raleway", sans-serif;
   color: #485460;
+  cursor: default;
 }
 
-/* Header */
+.btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 2px solid #63dba3;
+  border-radius: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn p {
+  font-size: 16px;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+/* Header section */
 .splash {
   display: -ms-flexbox;
   display: flex;
@@ -81,10 +103,16 @@ body {
 
 /* Title in header */
 .header-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
   font-size: 25px;
-  padding-bottom: 85px;
   letter-spacing: 1.2px;
+  /* Btn-one */
 }
 
 .header-text h1 {
@@ -100,10 +128,29 @@ body {
   padding-top: 15px;
 }
 
-/* About */
+.header-text .btn-one {
+  height: 45px;
+  width: 180px;
+  margin-top: 45px;
+  border: 2px solid #63dba3;
+}
+
+.header-text .btn-one p {
+  font-size: 16px;
+  padding: 0;
+  font-weight: 600;
+}
+
+.header-text .btn-one:hover {
+  background-color: #63dba3;
+  color: #fff;
+}
+
+/* About section */
 .container {
   max-width: 80vw;
   margin: 12vh auto;
+  /* Boxes icons in section about */
 }
 
 .container .section-text {
@@ -129,9 +176,14 @@ body {
   bottom: -20px;
   left: 50%;
   transform: translate(-50%);
-  width: 26%;
+  width: 20%;
   height: 1px;
   background-color: #63dba3;
+  transition: 0.4s;
+}
+
+.container .section-text h2:hover::after {
+  width: 65%;
 }
 
 .container .section-text p {
@@ -161,7 +213,7 @@ body {
   line-height: 120px;
   border-radius: 50%;
   background-color: rgba(210, 218, 226, 0.507);
-  transition: .4s;
+  transition: 0.4s;
   margin-bottom: 7vh;
 }
 
@@ -174,5 +226,33 @@ body {
   font-size: 30px;
   color: #000;
   margin-bottom: 4vh;
+}
+
+.container .about {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.container .btn-two {
+  width: 165px;
+  height: 45px;
+  margin-top: 100px;
+  border: 2px solid #485460;
+  font-size: 14px;
+}
+
+.container .btn-two p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container .btn-two:hover {
+  border: 2px solid #63dba3;
+  background-color: #63dba3;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
