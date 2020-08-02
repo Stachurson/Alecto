@@ -1,22 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400;600&family=Raleway:wght@200;400;500&display=swap');
 
 /* Variables */
+
+/* Colors */
 $main-color: #26de81;
 $section-color: #4b4b4b;
 $text-color: #485460;
 
+/* Fonst */
 $font-logo: 'Athiti', sans-serif;
+$font-text: 'Raleway', sans-serif;
+
+/* Letter  spacing */
+$spacing: 1.2px;
 
 /* Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 /* Header */
 .splash {
-    background-image: url('https://i.postimg.cc/fLgJ362F/pexels-visit-greenland-360912.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('https://i.postimg.cc/yNBRry0N/pexels-visit-greenland-360912.jpg');
     height: 100vh;
     width: 100vw;
     background-position: center center;
@@ -38,7 +49,7 @@ $font-logo: 'Athiti', sans-serif;
     font-size: 35px;
     font-family: $font-logo;
     color: #fff;
-    letter-spacing: 1.2px;
+    letter-spacing: $spacing;
 
     .logo-element {
         color: $main-color;
@@ -52,7 +63,7 @@ $font-logo: 'Athiti', sans-serif;
     display: flex;
 
     li {
-        padding-right: 35px;
+        padding-right: 45px;
         list-style-type: none;
     }
 
@@ -62,5 +73,28 @@ $font-logo: 'Athiti', sans-serif;
         text-transform: uppercase;
         font-family: $font-logo;
         font-size: 18px;
+        letter-spacing: $spacing;
+    }
+}
+
+/* Text in header */
+.header-text {
+    text-align: center;
+    font-size: 25px;
+    font-family: $font-text;
+    padding-bottom: 85px;
+
+    h1 {
+        font-weight: 200;
+    }
+
+    span {
+        font-weight: 500;
+        letter-spacing: $spacing;
+    }
+
+    p {
+        font-size: 20px;
+        padding-top: 15px;
     }
 }
