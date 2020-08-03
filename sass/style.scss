@@ -26,13 +26,14 @@ $transition: .4s;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: normal;
+    
 }
 
 body {
     font-family: $font-text;
     color: $text-color;
     cursor: default;
+    font-weight: 200;
 }
 
 .btn {
@@ -323,5 +324,36 @@ body {
 
     .photo:hover img {
         filter: brightness(90%);
+    }
+}
+
+/* Section cite */
+.cite-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 87vh;
+    background: url('https://i.postimg.cc/ZngnMDC1/pexels-fauxels-3183150.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+    h5 {
+        font-size: 30px;
+        color: #fff;
+        letter-spacing: 1.2px;
+        margin-bottom: 35px;
+        font-weight: 200;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .cite-word {
+        color: $main-color;
     }
 }

@@ -10,13 +10,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: normal;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   color: #485460;
   cursor: default;
+  font-weight: 200;
 }
 
 .btn {
@@ -333,5 +333,40 @@ body {
 
 .container .photo:hover img {
   filter: brightness(90%);
+}
+
+/* Section cite */
+.cite-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw;
+  height: 87vh;
+  background: url("https://i.postimg.cc/ZngnMDC1/pexels-fauxels-3183150.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.cite-container h5 {
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1.2px;
+  margin-bottom: 35px;
+  font-weight: 200;
+}
+
+.cite-container p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.cite-container .cite-word {
+  color: #63dba3;
 }
 /*# sourceMappingURL=style.css.map */
