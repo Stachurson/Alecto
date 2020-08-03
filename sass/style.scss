@@ -226,6 +226,7 @@ body {
         }
     }
 
+    /* Btn in about section */
     .about {
         display: flex;
         flex-direction: column;
@@ -252,3 +253,75 @@ body {
     }
 }
 
+/* Work section */
+.container {
+    max-width: 80vw;
+    margin: 25vh auto;
+
+    .section-text {
+        padding-bottom: 120px;
+    }
+
+    .work{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .photo {
+        display: flex;
+    }
+
+    .photo-left {
+        margin-bottom: 20vh;
+    }
+
+    .work-text {
+        flex: 1;
+        padding: 0 80px 0 0;
+        letter-spacing: 2px;
+
+        h4 {
+            font-size: 50px;
+            font-weight: 200;
+            margin-top: -8px;
+        }
+
+        p {
+            padding-top: 40px;
+            text-align: left;
+            font-weight: 200;
+            line-height: 1.8em;
+        }
+
+        .btn {
+            margin-top: 35px;
+    
+            p {
+                padding: 0;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .work-text:last-child {
+        padding: 0 0 0 80px;
+    }
+
+    .work-image {
+        max-width: 40%;
+        max-height: 280px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(60%);
+            transition: $transition;
+        }
+    }
+
+    .photo:hover img {
+        filter: brightness(90%);
+    }
+}
