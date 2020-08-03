@@ -26,14 +26,18 @@ $transition: .4s;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-weight: 200;
 }
 
 body {
     font-family: $font-text;
     color: $text-color;
     cursor: default;
-    font-weight: 200;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
 .btn {
@@ -118,10 +122,6 @@ body {
     font-size: 25px;
     letter-spacing: $spacing;
 
-    h1 {
-        font-weight: 200;
-    }
-
     span {
         font-weight: 500;
     }
@@ -153,7 +153,6 @@ body {
 
 /* About section */
 .container {
-    max-width: 80vw;
     margin: 12vh auto;
 
     .section-text {
@@ -259,14 +258,14 @@ body {
     max-width: 80vw;
     margin: 25vh auto;
 
-    .section-text {
-        padding-bottom: 120px;
-    }
-
     .work{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        h2 {
+            margin-bottom: 120px;
+        }
     }
 
     .photo {
@@ -284,14 +283,12 @@ body {
 
         h4 {
             font-size: 50px;
-            font-weight: 200;
             margin-top: -8px;
         }
 
         p {
             padding-top: 40px;
             text-align: left;
-            font-weight: 200;
             line-height: 1.8em;
         }
 
@@ -343,17 +340,46 @@ body {
     h5 {
         font-size: 30px;
         color: #fff;
-        letter-spacing: 1.2px;
+        letter-spacing: $spacing;
         margin-bottom: 35px;
-        font-weight: 200;
     }
 
     p {
         font-size: 18px;
-        font-weight: 200;
     }
 
     .cite-word {
         color: $main-color;
+    }
+}
+
+/*Services section */
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+
+    .mar {
+        margin-top: 70px;
+    }
+
+    .service-box {
+        flex: 0 0 50%;
+        padding: 0 40px 20px 40px;
+
+        h6 {
+            font-size: 50px;
+            margin: 20px 0 40px 0;
+            letter-spacing: $sp-less;
+        }
+    
+        p {
+            letter-spacing: $spacing;
+            line-height: 1.8em;
+            letter-spacing: 1.5px;
+        }
+
+        span {
+            color: $main-color;
+        }
     }
 }
