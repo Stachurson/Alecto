@@ -76,7 +76,7 @@ body .section-text h2:hover::after {
 }
 
 .btn p {
-  font-size: 16px;
+  font-size: 14px;
   padding: 0;
   font-weight: 600;
   letter-spacing: 0.6px;
@@ -85,14 +85,14 @@ body .section-text h2:hover::after {
 .btn-two {
   width: 165px;
   height: 45px;
-  margin-top: 100px;
   border: 2px solid #485460;
   font-size: 14px;
 }
 
-.btn-two p {
+.btn-two .btn-text {
   font-size: 14px;
   font-weight: 600;
+  margin: 0;
 }
 
 .btn-two:hover {
@@ -212,7 +212,7 @@ body .section-text h2:hover::after {
 }
 
 .about p {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .about .box-wrapper {
@@ -339,16 +339,16 @@ body .section-text h2:hover::after {
       align-items: center;
   width: 100vw;
   height: 87vh;
-  background: url("https://i.postimg.cc/ZngnMDC1/pexels-fauxels-3183150.jpg") no-repeat center center;
+  background: url("https://i.postimg.cc/nLnsNjT1/pexels-fauxels-3183150-1.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
+  letter-spacing: 0.6px;
 }
 
 .cite-container h5 {
   font-size: 30px;
   color: #fff;
-  letter-spacing: 1.2px;
   margin-bottom: 35px;
 }
 
@@ -417,7 +417,7 @@ body .section-text h2:hover::after {
 
 .team .container .container-image .team-image {
   position: relative;
-  height: 410px;
+  height: 365px;
   -ms-flex: 0 0 20%;
       flex: 0 0 20%;
 }
@@ -428,7 +428,7 @@ body .section-text h2:hover::after {
   object-fit: cover;
 }
 
-.team .container .container-image .team-image .bg-image {
+.team .container .container-image .team-image .bg-color {
   position: absolute;
   display: -ms-flexbox;
   display: flex;
@@ -449,8 +449,86 @@ body .section-text h2:hover::after {
   text-decoration: none;
 }
 
-.team .container .team-image:hover .bg-image {
+.team .container .team-image:hover .bg-color {
   opacity: 1;
   cursor: pointer;
+}
+
+/* Pricing section */
+.pricing {
+  max-width: 80vw;
+  margin: 15vh auto;
+}
+
+.pricing .pricing-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pricing .pricing-container .pricing-box {
+  margin-right: 27px;
+}
+
+.pricing .pricing-container .pricing-box:last-child {
+  margin-right: 0;
+}
+
+.pricing .pricing-container .cost {
+  font-size: 58px;
+  color: #63dba3;
+  margin-bottom: 20px;
+}
+
+.pricing .pricing-container .subtitle {
+  font-size: 16px;
+  color: #afb0b1;
+  letter-spacing: 1.2px;
+  margin-bottom: 70px;
+}
+
+.pricing .pricing-container .pricing-text {
+  font-size: 17px;
+  line-height: 2.5em;
+  letter-spacing: 0.6px;
+}
+
+.pricing .pricing-container .cost, .pricing .pricing-container .subtitle, .pricing .pricing-container .pricing-text {
+  padding: 0 40px 0 15px;
+}
+
+.pricing .pricing-container .btn-pricing {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 30px 10px 0 0;
+  background-color: #63dba3;
+  border-radius: 2px 2px 4px 4px;
+  color: #fff;
+}
+
+.pricing .pricing-container .btn-pricing p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.pricing .pricing-container .btn-pricing .fas {
+  font-size: 20px;
+}
+
+.pricing .pricing-container .btn-pricing:hover {
+  background-color: #74f0b6;
+  cursor: pointer;
+}
+
+.pricing .pricing-container .btn-pricing:active {
+  box-shadow: inset 0px 0px 29px -8px rgba(0, 0, 0, 0.47);
+  background-color: #63dba3;
 }
 /*# sourceMappingURL=style.css.map */
