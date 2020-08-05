@@ -284,7 +284,7 @@ body {
             margin-bottom: 20px;
         }
 
-        .photo {
+        .box-photo {
             display: flex;
         }
 
@@ -323,8 +323,8 @@ body {
         }
 
         .work-image {
-            max-width: 40%;
-            max-height: 280px;
+            width: 40%;
+            height: 280px;
 
             img {
                 width: 100%;
@@ -635,6 +635,155 @@ body {
 
         .menu a:hover {
             color: #000;
+        }
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+
+    body {
+
+        .section-text {
+            margin-bottom: 75px;
+
+            h2 {
+                font-size: 44px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Btn-two */
+        .btn-two {
+        height: 38px;
+        width: 135px;
+        border: 2px solid $text-color;
+        font-size: 14px;
+        
+            .btn-text {
+                font-size: 13px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+    }
+
+    /* Header */
+    .splash {
+
+        /* Menu header */
+        .splash-inner {
+            flex-direction: column;
+
+            .menu {
+        
+                li {
+                    padding-right: 20px;
+                }
+
+                .fas {
+                    display: none;
+                }
+            }
+        }
+
+        /* Title header */
+        .header-text {
+
+            h1 {
+                font-size: 37px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .btn {
+                height: 38px;
+                width: 135px;
+    
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    /* About section */
+    .about .box {
+
+        .fas {
+            font-size: 30px;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 15px;
+            letter-spacing: $sp-less;
+            line-height: 20px;
+            margin-bottom: 60px;
+        }
+
+        .btn .btn-two {
+            height: 38px;
+            width: 135px;
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+    /* Work section */
+    .work .box-photo {
+
+        .work-image {
+            width: 45%;
+            height: 240px;
+        }
+
+        .work-text {
+            padding: 0 45px 0 0;
+
+            h4 {
+                font-size: 40px;
+                margin-top: -8px;
+            }
+
+            p {
+                padding-top: 15px;
+                line-height: 1.6em;
+                font-size: 15px;
+            }
+        }
+
+        .work-text:last-child {
+            padding: 0 0 0 45px;
+        }
+    }
+
+    /* Cite section */
+    .cite-container {
+
+        h5 {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            font-size: 16px;
         }
     }
 }

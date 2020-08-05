@@ -291,7 +291,7 @@ body .btn-two:hover {
   margin-bottom: 20px;
 }
 
-.work .container .photo {
+.work .container .box-photo {
   display: -ms-flexbox;
   display: flex;
 }
@@ -332,8 +332,8 @@ body .btn-two:hover {
 }
 
 .work .container .work-image {
-  max-width: 40%;
-  max-height: 280px;
+  width: 40%;
+  height: 280px;
 }
 
 .work .container .work-image img {
@@ -661,5 +661,113 @@ body .btn-two:hover {
 
 .footer .container .menu a:hover {
   color: #000;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    /* Btn-two */
+  }
+  body .section-text {
+    margin-bottom: 75px;
+  }
+  body .section-text h2 {
+    font-size: 44px;
+  }
+  body .section-text p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  body .btn-two {
+    height: 38px;
+    width: 135px;
+    border: 2px solid #485460;
+    font-size: 14px;
+  }
+  body .btn-two .btn-text {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+  }
+  /* Header */
+  .splash {
+    /* Menu header */
+    /* Title header */
+  }
+  .splash .splash-inner {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .splash .splash-inner .menu li {
+    padding-right: 20px;
+  }
+  .splash .splash-inner .menu .fas {
+    display: none;
+  }
+  .splash .header-text h1 {
+    font-size: 37px;
+  }
+  .splash .header-text p {
+    font-size: 18px;
+  }
+  .splash .header-text .btn {
+    height: 38px;
+    width: 135px;
+  }
+  .splash .header-text .btn p {
+    font-size: 13px;
+  }
+  /* About section */
+  .about .box .fas {
+    font-size: 30px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin-bottom: 30px;
+  }
+  .about .box h3 {
+    font-size: 22px;
+  }
+  .about .box p {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
+  .about .box .btn .btn-two {
+    height: 38px;
+    width: 135px;
+  }
+  .about .box .btn .btn-two p {
+    font-size: 13px;
+  }
+  /* Work section */
+  .work .box-photo .work-image {
+    width: 45%;
+    height: 240px;
+  }
+  .work .box-photo .work-text {
+    padding: 0 45px 0 0;
+  }
+  .work .box-photo .work-text h4 {
+    font-size: 40px;
+    margin-top: -8px;
+  }
+  .work .box-photo .work-text p {
+    padding-top: 15px;
+    line-height: 1.6em;
+    font-size: 15px;
+  }
+  .work .box-photo .work-text:last-child {
+    padding: 0 0 0 45px;
+  }
+  /* Cite section */
+  .cite-container h5 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .cite-container p {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
