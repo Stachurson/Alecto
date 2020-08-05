@@ -159,7 +159,7 @@ body .section-text h2:hover::after {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Athiti", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1.2px;
 }
 
@@ -510,6 +510,7 @@ body .section-text h2:hover::after {
   background-color: #63dba3;
   border-radius: 2px 2px 4px 4px;
   color: #fff;
+  transition: 0.4s;
 }
 
 .pricing .pricing-container .btn-pricing p {
@@ -528,7 +529,53 @@ body .section-text h2:hover::after {
 }
 
 .pricing .pricing-container .btn-pricing:active {
-  box-shadow: inset 0px 0px 29px -8px rgba(0, 0, 0, 0.47);
+  box-shadow: inset 0px 0px 23px -8px rgba(0, 0, 0, 0.47);
   background-color: #63dba3;
+}
+
+/* Map section */
+.map {
+  max-width: 100vw;
+  margin: 30vh 0 12vh 10vw;
+}
+
+.map .map-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map .map-container .map-text {
+  padding: 0 30px 0 0;
+  letter-spacing: 2px;
+}
+
+.map .map-container .map-text h4 {
+  font-size: 50px;
+  margin-top: -8px;
+}
+
+.map .map-container .map-text p {
+  padding-top: 40px;
+  text-align: left;
+  line-height: 1.8em;
+}
+
+.map .map-container .map-text .btn {
+  margin-top: 45px;
+}
+
+.map .map-container .map-text .btn p {
+  padding-top: 0;
+}
+
+.map .map-container .map-image {
+  height: 300px;
+  width: 100vw;
+}
+
+.map .map-container .map-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
