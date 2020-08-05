@@ -71,42 +71,63 @@ body {
             width: 65%;
         }
     }
-}
 
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid $main-color;
-    border-radius: 20px;
-    transition: $transition;
-    cursor: pointer;
-
-    p {
-        font-size: 14px;
-        padding: 0;
-        font-weight: 600;
-        letter-spacing: $sp-less;
-    }
-}
-
-.btn-two {
-    width: 165px;
-    height: 45px;
-    border: 2px solid $text-color;
-    font-size: 14px;
+    /* Btn */
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $main-color;
+        border-radius: 20px;
+        transition: $transition;
+        cursor: pointer;
     
-    .btn-text {
-        font-size: 14px;
-        font-weight: 600;
-        margin: 0;
+        p {
+            font-size: 14px;
+            padding: 0;
+            font-weight: 600;
+            letter-spacing: $sp-less;
+        }
     }
-}
 
-.btn-two:hover {
-    border: 2px solid $main-color;
-    background-color: $main-color;
-    color: #fff;
+    /* Btn-one */
+    .btn-one {
+        height: 45px;
+        width: 180px;
+        margin-top: 45px;
+        border: 2px solid $main-color;
+
+        p {
+            font-size: 16px;
+            padding: 0;
+            font-weight: 600;
+        }
+    }
+
+    .btn-one:hover {
+        background-color: $main-color;
+        color: #fff;
+    }
+
+    /* Btn-two */
+    .btn-two {
+        width: 165px;
+        height: 45px;
+        border: 2px solid $text-color;
+        font-size: 14px;
+        
+        .btn-text {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    
+    .btn-two:hover {
+        border: 2px solid $main-color;
+        background-color: $main-color;
+        color: #fff;
+    }
 }
 
 /* Header section */
@@ -320,7 +341,7 @@ body {
     }
 }
 
-/* Section cite */
+/* Cite section */
 .cite-container {
     display: flex;
     flex-direction: column;
@@ -518,7 +539,7 @@ body {
         display: flex;
 
         .map-text {
-            padding: 0 30px 0 0;
+            margin-right: 50px;
             letter-spacing: 2px;
 
             h4 {
@@ -552,4 +573,34 @@ body {
             }
         }
     }
+}
+
+/* Cite section two */
+.cite-container:nth-child(odd) {
+    margin-top: 25vh;
+    background: url('https://i.postimg.cc/XJYGZwZ1/pexels-egil-sj-holt-1906672.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h5 {
+        font-size: 50px;
+
+            .cite-word {
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+    }
+
+    .btn-one {
+        width: 210px;
+        margin-top: 20px;
+
+        
+            text-decoration: none;
+            color: #fff;
+            font-weight: normal;
+        
+    }
+
 }

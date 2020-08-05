@@ -17,6 +17,9 @@ body {
   font-family: "Raleway", sans-serif;
   color: #485460;
   cursor: default;
+  /* Btn */
+  /* Btn-one */
+  /* Btn-two */
 }
 
 body .container {
@@ -62,7 +65,7 @@ body .section-text h2:hover::after {
   width: 65%;
 }
 
-.btn {
+body .btn {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -75,27 +78,45 @@ body .section-text h2:hover::after {
   cursor: pointer;
 }
 
-.btn p {
+body .btn p {
   font-size: 14px;
   padding: 0;
   font-weight: 600;
   letter-spacing: 0.6px;
 }
 
-.btn-two {
+body .btn-one {
+  height: 45px;
+  width: 180px;
+  margin-top: 45px;
+  border: 2px solid #63dba3;
+}
+
+body .btn-one p {
+  font-size: 16px;
+  padding: 0;
+  font-weight: 600;
+}
+
+body .btn-one:hover {
+  background-color: #63dba3;
+  color: #fff;
+}
+
+body .btn-two {
   width: 165px;
   height: 45px;
   border: 2px solid #485460;
   font-size: 14px;
 }
 
-.btn-two .btn-text {
+body .btn-two .btn-text {
   font-size: 14px;
   font-weight: 600;
   margin: 0;
 }
 
-.btn-two:hover {
+body .btn-two:hover {
   border: 2px solid #63dba3;
   background-color: #63dba3;
   color: #fff;
@@ -327,7 +348,7 @@ body .section-text h2:hover::after {
   filter: brightness(90%);
 }
 
-/* Section cite */
+/* Cite section */
 .cite-container {
   display: -ms-flexbox;
   display: flex;
@@ -545,7 +566,7 @@ body .section-text h2:hover::after {
 }
 
 .map .map-container .map-text {
-  padding: 0 30px 0 0;
+  margin-right: 50px;
   letter-spacing: 2px;
 }
 
@@ -577,5 +598,31 @@ body .section-text h2:hover::after {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* Cite section two */
+.cite-container:nth-child(odd) {
+  margin-top: 25vh;
+  background: url("https://i.postimg.cc/XJYGZwZ1/pexels-egil-sj-holt-1906672.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cite-container:nth-child(odd) h5 {
+  font-size: 50px;
+}
+
+.cite-container:nth-child(odd) h5 .cite-word {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.cite-container:nth-child(odd) .btn-one {
+  width: 210px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
