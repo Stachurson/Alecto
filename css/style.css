@@ -603,7 +603,7 @@ body .btn-two:hover {
 /* Cite section two */
 .cite-container:nth-child(odd) {
   margin-top: 25vh;
-  background: url("https://i.postimg.cc/XJYGZwZ1/pexels-egil-sj-holt-1906672.jpg") center center no-repeat;
+  background: url("https://i.postimg.cc/FRnyh9r6/pexels-simon-migaj-747964.jpg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -624,5 +624,42 @@ body .btn-two:hover {
   text-decoration: none;
   color: #fff;
   font-weight: normal;
+}
+
+/* Footer section */
+.footer {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.footer .container {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 25px 0;
+}
+
+.footer .container .footer-logo {
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+}
+
+.footer .container .footer-logo .fab {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #000;
+}
+
+.footer .container .menu a {
+  font-size: 18px;
+  text-transform: none;
+  color: #57636e;
+}
+
+.footer .container .menu a:hover {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

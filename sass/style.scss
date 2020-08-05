@@ -578,7 +578,7 @@ body {
 /* Cite section two */
 .cite-container:nth-child(odd) {
     margin-top: 25vh;
-    background: url('https://i.postimg.cc/XJYGZwZ1/pexels-egil-sj-holt-1906672.jpg') center center no-repeat;
+    background: url('https://i.postimg.cc/FRnyh9r6/pexels-simon-migaj-747964.jpg') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
@@ -603,4 +603,38 @@ body {
         
     }
 
+}
+
+/* Footer section */
+.footer {
+    width: 80vw;
+    margin: 0 auto;
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 25px 0;
+
+        .footer-logo {
+            display: flex;
+            font-size: 18px;
+            letter-spacing: $sp-less;
+
+            .fab {
+                font-size: 20px;
+                margin-right: 12px;
+                color: #000;
+            }
+        }
+
+        .menu a {
+            font-size: 18px;
+            text-transform: none;
+            color: rgb(87,99,110);
+        }
+
+        .menu a:hover {
+            color: #000;
+        }
+    }
 }
