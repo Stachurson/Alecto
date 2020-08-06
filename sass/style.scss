@@ -498,9 +498,8 @@ body {
             justify-content: space-between;
             align-items: center;
             height: 60px;
-            width: 17vw;
             padding: 0 25px;
-            margin: 30px 10px 0 0;
+            margin: 30px 0 0 0;
             background-color: $main-color;
             border-radius: 2px 2px 4px 4px;
             color: #fff;
@@ -636,32 +635,26 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 1011px){
+@media (max-width: 1136px) {
     .pricing {
         
-        .container .pricing-container {
-   
-            .pricing-box {
-                flex: 0 0 50%;
-                flex-wrap: wrap;
-                margin: 0;
-
-                .pricing-text:nth-child(even) {
-                    padding: 0;
-                }
-            }
+        .container .pricing-container .pricing-box {
+            flex: 0 0 50%;
+            margin: 0;
 
             .btn-pricing {
-                margin-bottom: 30px;
-                
+                margin-right: 0;
+                height: 50px;
+                width: 90%;
+                margin-bottom: 50px;
+
                 p {
+                    font-size: 16px;
                     letter-spacing: 1.5px;
                     padding-right: 10px;
                 }
             }
         }
-
-        
     }
 }
 
@@ -855,33 +848,6 @@ body {
                 }
             }
         }  
-    }
-
-    /* Pricing section */
-    .pricing {
-        
-        .container .pricing-container {
-   
-            .pricing-box {
-                flex: 0 0 50%;
-                flex-wrap: wrap;
-                margin-right: 0;
-
-                .subtitle {
-                    font-size: 15px;
-                }
-
-                .pricing-text {
-                    line-height: 27px;
-                }
-
-                .btn-pricing {
-                    height: 50px;
-                    width: 90%;
-                    margin-bottom: 50px;
-                }
-            }
-        }
     }
 
     /* Map section */
@@ -1160,10 +1126,7 @@ body {
                     margin-bottom: 50px;
     
                     .btn-pricing {
-                        height: 50px;
-                        width: 50%;
                         margin-bottom: 50px;
-                        margin-right: 0;
                     }
                 }
             }
@@ -1205,17 +1168,18 @@ body {
     }
 }
 
-@media (max-width: 412px) {
-    /* Pricing section */
-    body {
-        .pricing .container .pricing-container { 
-            
-            .pricing-box {
+@media (max-width: 432px) {
+    .pricing {
+        
+        .container .pricing-container .pricing-box {
 
-                .btn-pricing {
-                    height: 50px;
-                    width: 70%;
-                    margin-bottom: 50px;
+            .btn-pricing {
+                width: 80vw;
+
+                p {
+                    font-size: 16px;
+                    letter-spacing: 1.5px;
+                    padding-right: 10px;
                 }
             }
         }
@@ -1223,10 +1187,16 @@ body {
 }
 
 @media (max-width: 360px) {
+    body {
+        .section-text {
 
-    .splash {
-        .splash-inner {
-            .menu {
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .splash {
+            .splash-inner .menu {
 
                 li:last-of-type {
                     display: none;
@@ -1235,7 +1205,6 @@ body {
                 .pad {
                     padding-right: 0;
                 }
-                
             }
         }
     }
@@ -1243,12 +1212,6 @@ body {
 
 @media (max-width: 299px) {
     body {
-        .section-text {
-
-            h2 {
-                font-size: 40px;
-            }
-        }
         
         /* Header */
         .splash {
@@ -1266,8 +1229,5 @@ body {
                 }
             }
         }
-
-        /* Map section */
-
     }
 }
