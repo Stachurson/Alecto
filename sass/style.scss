@@ -370,7 +370,7 @@ body {
     }
 }
 
-/*Services section */
+/*Service section */
 .services {
     max-width: 80vw;
     margin: 12vh auto;
@@ -490,10 +490,7 @@ body {
             font-size: 17px;
             line-height: 2.5em;
             letter-spacing: $sp-less;
-        }
-
-        .cost, .subtitle, .pricing-text {
-            padding: 0 40px 0 15px;
+            padding-right: 40px;
         }
 
         .btn-pricing {
@@ -639,6 +636,35 @@ body {
 }
 
 /* Media Queries */
+@media (max-width: 1011px){
+    .pricing {
+        
+        .container .pricing-container {
+   
+            .pricing-box {
+                flex: 0 0 50%;
+                flex-wrap: wrap;
+                margin: 0;
+
+                .pricing-text:nth-child(even) {
+                    padding: 0;
+                }
+            }
+
+            .btn-pricing {
+                margin-bottom: 30px;
+                
+                p {
+                    letter-spacing: 1.5px;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        
+    }
+}
+
 @media (max-width: 942px) {
 
 
@@ -797,7 +823,7 @@ body {
                 padding: 0 20px 15px 20px;
                 
                 h6 {
-                    font-size: 41px;
+                    font-size: 42px;
                     margin-bottom: 20px;
                 }
 
@@ -831,10 +857,10 @@ body {
     .pricing {
         
         .container .pricing-container {
-        
+   
             .pricing-box {
-
                 flex: 0 0 50%;
+                flex-wrap: wrap;
                 margin-right: 0;
 
                 .subtitle {
@@ -842,23 +868,15 @@ body {
                 }
 
                 .pricing-text {
-                    padding-right: 5vw;
                     line-height: 27px;
                 }
 
                 .btn-pricing {
-                    
                     height: 50px;
                     width: 90%;
                     margin-bottom: 50px;
                 }
             }
-
-            .pricing-box:nth-child(even) {
-                margin: 0;
-            } 
-
-            
         }
     }
 
@@ -867,8 +885,6 @@ body {
 
         .map-container {
 
-            
-            
             .map-text {
 
                 h4 {
@@ -926,6 +942,260 @@ body {
 
                 a {
                     font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 724px) {
+
+    /* Cite section */
+    .cite-container {
+        
+        h5 {
+            margin: 0 auto;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            font-size: 15px;
+        }
+    }
+
+    /* Team section */
+    .team {
+
+        .container {
+
+            .container-image {
+
+                .team-image {
+                    height: 210px;
+                }
+            }
+        }  
+    }
+}
+
+@media (max-width: 618px) {
+    body {
+        .section-subtitle {
+        display: none;
+        }
+
+        /*About section */
+        .about {
+            
+            .section-text {
+                margin-bottom: 50px;
+            }  
+
+            .box-wrapper {
+                flex-wrap: wrap;
+                .box {
+                    flex: 0 0 50%;
+                }
+            }
+        }
+
+        /* Work section */
+        .work .box-photo {
+
+            .work-text {
+    
+                h4 {
+                    font-size: 30px;
+                    color: #000;
+                }
+    
+                p {
+                    line-height: 1.5em;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        /* Cite section */
+        .cite-container {
+            display: none;
+        }
+
+        /* Footer section */
+        .footer {
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 572px) {
+    
+    /* Service section */
+    .services {
+        .container-box {
+            
+            .service-box {
+                padding: 0 20px 15px 20px;
+                
+                h6 {
+                    font-size: 37px;
+                }
+            }
+        }
+    }
+
+    /* Team section */
+    .team{
+        display: none;
+    }
+}
+
+@media (max-width: 517px) {
+    body {
+
+        /* Header section */
+        .header-text {
+
+            p {
+                display: none;
+            }
+
+            .btn {
+
+                p {
+                    display: inline;
+                }
+            }
+        }
+
+        /* About section */
+        .about {
+                
+            .section-text {
+                margin-bottom: 50px;
+            }  
+
+            .box-wrapper {
+                flex-wrap: wrap;
+                
+                .box {
+                    flex: 0 0 100%;
+                    padding-right: 0;
+                }
+            }
+        }
+
+        /* Work section */
+        .work {
+            margin: 20vh auto;
+
+            .container {
+                
+                .box-photo {
+                    flex-direction: column;
+                    margin-bottom: -50px;
+
+                    .work-image {
+                        width: 80vw;
+                        height: 240px;
+                        margin-bottom: 50px;
+                    }
+
+                    .work-text {
+                        padding-left: 0;
+                        
+                        h4, p {
+                            text-align: center;
+                        }
+
+                        .btn {
+                            margin: 30px auto;
+                        }
+                    }
+                }
+
+                .box-photo.photo-right {
+                    display: none;
+                }
+            }
+        }
+
+        /* Service section */
+        .section-text {
+            margin-bottom: 20px;
+        }
+
+        .container-box {
+            flex-direction: column;
+            text-align: center;
+
+            .service-box.mar {
+                margin: 0;
+            }
+        }
+    
+        /* Pricing section */
+        .pricing {
+            margin-bottom: -3vh;
+
+            .container .pricing-container {
+                flex-direction: column;
+                text-align: center;
+
+                .pricing-text {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .pricing-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    .btn-pricing {
+                        height: 50px;
+                        width: 50%;
+                        margin-bottom: 50px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        /* Map section */
+        .map {
+            margin-top: 15vh;
+
+            .map-container {
+
+                .map-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    h4 {
+                        font-size: 38px;
+                        color: #000;
+                    }
+    
+                    p {
+                        padding-top: 20px;
+                        font-size: 14px;
+                        line-height: 1.6em;
+                        text-align: center;
+                    }
+
+                    .btn {
+                        margin-top: 25px;
+                    }
+                }
+
+                .map-image {
+                    display: none;
                 }
             }
         }

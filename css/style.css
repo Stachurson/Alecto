@@ -381,7 +381,7 @@ body .btn-two:hover {
   color: #63dba3;
 }
 
-/*Services section */
+/*Service section */
 .services {
   max-width: 80vw;
   margin: 12vh auto;
@@ -515,10 +515,7 @@ body .btn-two:hover {
   font-size: 17px;
   line-height: 2.5em;
   letter-spacing: 0.6px;
-}
-
-.pricing .pricing-container .cost, .pricing .pricing-container .subtitle, .pricing .pricing-container .pricing-text {
-  padding: 0 40px 0 15px;
+  padding-right: 40px;
 }
 
 .pricing .pricing-container .btn-pricing {
@@ -668,6 +665,26 @@ body .btn-two:hover {
 }
 
 /* Media Queries */
+@media (max-width: 1011px) {
+  .pricing .container .pricing-container .pricing-box {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  .pricing .container .pricing-container .pricing-box .pricing-text:nth-child(even) {
+    padding: 0;
+  }
+  .pricing .container .pricing-container .btn-pricing {
+    margin-bottom: 30px;
+  }
+  .pricing .container .pricing-container .btn-pricing p {
+    letter-spacing: 1.5px;
+    padding-right: 10px;
+  }
+}
+
 @media (max-width: 942px) {
   body {
     /* Btn-two */
@@ -780,7 +797,7 @@ body .btn-two:hover {
     padding: 0 20px 15px 20px;
   }
   .services .container-box .service-box h6 {
-    font-size: 41px;
+    font-size: 42px;
     margin-bottom: 20px;
   }
   .services .container-box .service-box p {
@@ -797,22 +814,20 @@ body .btn-two:hover {
   .pricing .container .pricing-container .pricing-box {
     -ms-flex: 0 0 50%;
         flex: 0 0 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-right: 0;
   }
   .pricing .container .pricing-container .pricing-box .subtitle {
     font-size: 15px;
   }
   .pricing .container .pricing-container .pricing-box .pricing-text {
-    padding-right: 5vw;
     line-height: 27px;
   }
   .pricing .container .pricing-container .pricing-box .btn-pricing {
     height: 50px;
     width: 90%;
     margin-bottom: 50px;
-  }
-  .pricing .container .pricing-container .pricing-box:nth-child(even) {
-    margin: 0;
   }
   /* Map section */
   .map .map-container .map-text h4 {
@@ -857,6 +872,191 @@ body .btn-two:hover {
   }
   .footer .container .menu a {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 724px) {
+  /* Cite section */
+  .cite-container h5 {
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .cite-container p {
+    font-size: 15px;
+  }
+  /* Team section */
+  .team .container .container-image .team-image {
+    height: 210px;
+  }
+}
+
+@media (max-width: 618px) {
+  body {
+    /*About section */
+    /* Work section */
+    /* Cite section */
+    /* Footer section */
+  }
+  body .section-subtitle {
+    display: none;
+  }
+  body .about .section-text {
+    margin-bottom: 50px;
+  }
+  body .about .box-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .about .box-wrapper .box {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+  }
+  body .work .box-photo .work-text h4 {
+    font-size: 30px;
+    color: #000;
+  }
+  body .work .box-photo .work-text p {
+    line-height: 1.5em;
+    font-size: 14px;
+  }
+  body .cite-container {
+    display: none;
+  }
+  body .footer .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 572px) {
+  /* Service section */
+  .services .container-box .service-box {
+    padding: 0 20px 15px 20px;
+  }
+  .services .container-box .service-box h6 {
+    font-size: 37px;
+  }
+  /* Team section */
+  .team {
+    display: none;
+  }
+}
+
+@media (max-width: 517px) {
+  body {
+    /* Header section */
+    /* About section */
+    /* Work section */
+    /* Service section */
+    /* Pricing section */
+    /* Map section */
+  }
+  body .header-text p {
+    display: none;
+  }
+  body .header-text .btn p {
+    display: inline;
+  }
+  body .about .section-text {
+    margin-bottom: 50px;
+  }
+  body .about .box-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .about .box-wrapper .box {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    padding-right: 0;
+  }
+  body .work {
+    margin: 20vh auto;
+  }
+  body .work .container .box-photo {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-bottom: -50px;
+  }
+  body .work .container .box-photo .work-image {
+    width: 80vw;
+    height: 240px;
+    margin-bottom: 50px;
+  }
+  body .work .container .box-photo .work-text {
+    padding-left: 0;
+  }
+  body .work .container .box-photo .work-text h4, body .work .container .box-photo .work-text p {
+    text-align: center;
+  }
+  body .work .container .box-photo .work-text .btn {
+    margin: 30px auto;
+  }
+  body .work .container .box-photo.photo-right {
+    display: none;
+  }
+  body .section-text {
+    margin-bottom: 20px;
+  }
+  body .container-box {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+  }
+  body .container-box .service-box.mar {
+    margin: 0;
+  }
+  body .pricing {
+    margin-bottom: -3vh;
+  }
+  body .pricing .container .pricing-container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+  }
+  body .pricing .container .pricing-container .pricing-text {
+    padding: 0;
+    margin: 0;
+  }
+  body .pricing .container .pricing-container .pricing-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  body .pricing .container .pricing-container .pricing-box .btn-pricing {
+    height: 50px;
+    width: 50%;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  body .map {
+    margin-top: 15vh;
+  }
+  body .map .map-container .map-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  body .map .map-container .map-text h4 {
+    font-size: 38px;
+    color: #000;
+  }
+  body .map .map-container .map-text p {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  body .map .map-container .map-text .btn {
+    margin-top: 25px;
+  }
+  body .map .map-container .map-image {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
