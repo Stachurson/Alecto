@@ -401,6 +401,7 @@ body .btn-two:hover {
 .services .container-box .service-box {
   -ms-flex: 0 0 50%;
       flex: 0 0 50%;
+  margin-bottom: 50px;
   padding: 0 40px 20px 40px;
 }
 
@@ -721,6 +722,9 @@ body .btn-two:hover {
   .splash .splash-inner .menu li {
     padding-right: 20px;
   }
+  .splash .splash-inner .menu li:last-of-type {
+    padding-right: 0;
+  }
   .splash .splash-inner .menu .fas {
     display: none;
   }
@@ -1002,9 +1006,6 @@ body .btn-two:hover {
         flex-direction: column;
     text-align: center;
   }
-  body .container-box .service-box.mar {
-    margin: 0;
-  }
   body .pricing {
     margin-bottom: -3vh;
   }
@@ -1024,6 +1025,7 @@ body .btn-two:hover {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
+    margin-bottom: 50px;
   }
   body .pricing .container .pricing-container .pricing-box .btn-pricing {
     height: 50px;
@@ -1043,7 +1045,7 @@ body .btn-two:hover {
         align-items: center;
   }
   body .map .map-container .map-text h4 {
-    font-size: 38px;
+    font-size: 31px;
     color: #000;
   }
   body .map .map-container .map-text p {
@@ -1057,6 +1059,44 @@ body .btn-two:hover {
   }
   body .map .map-container .map-image {
     display: none;
+  }
+}
+
+@media (max-width: 412px) {
+  /* Pricing section */
+  body .pricing .container .pricing-container .pricing-box .btn-pricing {
+    height: 50px;
+    width: 70%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .splash .splash-inner .menu li:last-of-type {
+    display: none;
+  }
+  .splash .splash-inner .menu .pad {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 299px) {
+  body {
+    /* Header */
+    /* Map section */
+  }
+  body .section-text h2 {
+    font-size: 40px;
+  }
+  body .splash {
+    /* Title header */
+  }
+  body .splash .header-text h1 {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  body .splash .header-text p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

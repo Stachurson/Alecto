@@ -166,7 +166,6 @@ body {
     }
 }
 
-
 /* Menu in header */
 .menu ul {
     display: flex;
@@ -385,6 +384,7 @@ body {
 
         .service-box {
             flex: 0 0 50%;
+            margin-bottom: 50px;
             padding: 0 40px 20px 40px;
 
             h6 {
@@ -708,6 +708,10 @@ body {
         
                 li {
                     padding-right: 20px;
+                }
+
+                li:last-of-type {
+                    padding-right: 0;
                 }
 
                 .fas {
@@ -1133,9 +1137,7 @@ body {
             flex-direction: column;
             text-align: center;
 
-            .service-box.mar {
-                margin: 0;
-            }
+            
         }
     
         /* Pricing section */
@@ -1155,6 +1157,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    margin-bottom: 50px;
     
                     .btn-pricing {
                         height: 50px;
@@ -1178,7 +1181,7 @@ body {
                     align-items: center;
     
                     h4 {
-                        font-size: 38px;
+                        font-size: 31px;
                         color: #000;
                     }
     
@@ -1199,5 +1202,72 @@ body {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 412px) {
+    /* Pricing section */
+    body {
+        .pricing .container .pricing-container { 
+            
+            .pricing-box {
+
+                .btn-pricing {
+                    height: 50px;
+                    width: 70%;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+
+    .splash {
+        .splash-inner {
+            .menu {
+
+                li:last-of-type {
+                    display: none;
+                }
+
+                .pad {
+                    padding-right: 0;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 299px) {
+    body {
+        .section-text {
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+        
+        /* Header */
+        .splash {
+
+            /* Title header */
+            .header-text {
+
+                h1 {
+                    font-size: 32px;
+                    line-height: 1.3em;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        /* Map section */
+
     }
 }
