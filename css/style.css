@@ -484,10 +484,14 @@ body .btn-two:hover {
 .pricing .pricing-container {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pricing .pricing-container .pricing-box {
   margin-right: 27px;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .pricing .pricing-container .pricing-box:last-child {
@@ -525,7 +529,7 @@ body .btn-two:hover {
   -ms-flex-align: center;
       align-items: center;
   height: 60px;
-  width: 100%;
+  width: 17vw;
   padding: 0 25px;
   margin: 30px 10px 0 0;
   background-color: #63dba3;
@@ -664,7 +668,7 @@ body .btn-two:hover {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 942px) {
   body {
     /* Btn-two */
   }
@@ -676,7 +680,6 @@ body .btn-two:hover {
   }
   body .section-text p {
     font-size: 14px;
-    margin-bottom: 30px;
   }
   body .btn-two {
     height: 38px;
@@ -767,6 +770,92 @@ body .btn-two:hover {
     margin-bottom: 20px;
   }
   .cite-container p {
+    font-size: 15px;
+  }
+  /* Service section */
+  .services .container-box .mar {
+    margin-top: 15px;
+  }
+  .services .container-box .service-box {
+    padding: 0 20px 15px 20px;
+  }
+  .services .container-box .service-box h6 {
+    font-size: 41px;
+    margin-bottom: 20px;
+  }
+  .services .container-box .service-box p {
+    font-size: 15px;
+  }
+  /* Team section */
+  .team .container .container-image .no-display {
+    display: none;
+  }
+  .team .container .container-image .team-image {
+    height: 270px;
+  }
+  /* Pricing section */
+  .pricing .container .pricing-container .pricing-box {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    margin-right: 0;
+  }
+  .pricing .container .pricing-container .pricing-box .subtitle {
+    font-size: 15px;
+  }
+  .pricing .container .pricing-container .pricing-box .pricing-text {
+    padding-right: 5vw;
+    line-height: 27px;
+  }
+  .pricing .container .pricing-container .pricing-box .btn-pricing {
+    height: 50px;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .pricing .container .pricing-container .pricing-box:nth-child(even) {
+    margin: 0;
+  }
+  /* Map section */
+  .map .map-container .map-text h4 {
+    font-size: 42px;
+  }
+  .map .map-container .map-text p {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 1.65em;
+  }
+  /* Cite section two */
+  .cite-container:nth-child(odd) h5 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .cite-container:nth-child(odd) .btn-one {
+    height: 38px;
+    width: 175px;
+    font-size: 14px;
+  }
+  /* Footer section */
+  .footer .container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 10px;
+  }
+  .footer .container .footer-logo {
+    margin-top: 8px;
+  }
+  .footer .container .footer-logo .footer-logo-text {
+    font-size: 16px;
+  }
+  .footer .container .footer-logo .fab {
+    font-size: 17px;
+  }
+  .footer .container .menu {
+    -ms-flex-order: -1;
+        order: -1;
+  }
+  .footer .container .menu .li {
+    padding-right: 20px;
+  }
+  .footer .container .menu a {
     font-size: 16px;
   }
 }
