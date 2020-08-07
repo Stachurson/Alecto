@@ -131,7 +131,7 @@ body .btn-two:hover {
   -ms-flex-pack: center;
       justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url("https://i.postimg.cc/yNBRry0N/pexels-visit-greenland-360912.jpg");
   background-position: center center;
   background-size: cover;
@@ -144,7 +144,7 @@ body .btn-two:hover {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 8vh;
   padding-top: 5vh;
   -ms-flex-pack: distribute;
@@ -358,7 +358,7 @@ body .btn-two:hover {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 87vh;
   background: url("https://i.postimg.cc/nLnsNjT1/pexels-fauxels-3183150-1.jpg") no-repeat center center;
   background-size: cover;
